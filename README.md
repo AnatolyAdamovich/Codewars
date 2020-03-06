@@ -1,2 +1,3 @@
 # Codewars
-Codewar's solutions
+Solutions from https://www.codewars.com/
+
