@@ -1,0 +1,20 @@
+/*
+You are given an odd-length array of integers, in which all of them are the same, except for one single number.
+
+Complete the method which accepts such an array, and returns that single different number.
+
+The input array will always be valid! (odd-length >= 3)
+
+Examples
+[1, 1, 2] ==> 2
+[17, 17, 3, 17, 17, 17, 17] ==> 3
+*/
+/////////////////////////////////////////////////////
+int stray(std::vector<int> numbers) {
+    int len = numbers.size() - 1;
+    int tmp = numbers[0];
+    if (tmp != numbers[1] && tmp != numbers[2]) return tmp;
+    for(int i = len ; i >= 0; --i){
+      if (tmp!=numbers[i]) return numbers[i];
+    }
+};
